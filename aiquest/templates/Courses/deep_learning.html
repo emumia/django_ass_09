@@ -1,0 +1,36 @@
+{% extends 'common_code/base.html' %}
+
+{% block title %} Deep Learning {% endblock title %}
+{% load static %}
+
+{% block content %}
+</br></br>
+
+    
+    <div class="card mb-3" style="max-width: 1740px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'images/deep_learning.jpg'%}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Deep Learning</h5>
+              <p class="card-text">
+                Deep Learning is a subset of machine learning that utilizes neural networks with multiple layers to learn and extract features from complex data. It has revolutionized the field of artificial intelligence and has been used to achieve breakthroughs in various domains, including computer vision, natural language processing, and speech recognition.
+
+One of the key advantages of Deep Learning is its ability to automatically learn and extract relevant features from raw data, without the need for explicit feature engineering. This has enabled the development of highly accurate models for tasks such as image classification, object detection, and language translation.
+
+However, the success of Deep Learning also depends on the availability of large amounts of labeled data for training, as well as powerful hardware such as GPUs to accelerate the training process. Additionally, interpretability and explainability of Deep Learning models can be a challenge, as the complex network architectures can make it difficult to understand how the model arrived at its predictions.
+
+Despite these challenges, Deep Learning continues to be an active area of research, with ongoing efforts to improve its performance, scalability, and interpretability. As such, it has the potential to unlock new applications and innovations in the years to come.
+            </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </br>      
+    
+{% endblock content %}
+

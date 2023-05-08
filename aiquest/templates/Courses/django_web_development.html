@@ -1,0 +1,37 @@
+{% extends 'common_code/base.html' %}
+
+{% block title %} Django {% endblock title %}
+{% load static%}
+
+{% block content %}
+</br></br>
+
+    
+    <div class="card mb-3" style="max-width: 1740px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'images/Django-for-web-ai-1-scaled.jpg'%}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Django Web Development</h5>
+              <p class="card-text">
+                Django is a powerful web development framework that allows developers to quickly and easily build scalable, secure, and maintainable web applications. With its clean and elegant design, Django has become one of the most popular web frameworks in the world, trusted by companies such as Instagram, Pinterest, and Mozilla.
+
+One of the key features of Django is its ability to handle complex database relationships and queries, making it ideal for building data-driven applications. Its built-in object-relational mapping (ORM) system allows developers to interact with the database using high-level Python code, reducing the need for complex SQL queries.
+
+Django also provides a robust set of tools for handling user authentication and authorization, making it easy to add user management functionality to your web application. Its built-in user model provides features such as password hashing, session management, and user permissions, saving developers time and effort.
+
+In addition to its core functionality, Django has a large and active community of developers who contribute a wide range of third-party packages, or "apps," that can be easily integrated into your project. These apps cover a wide range of functionality, from social authentication to content management systems, and can save developers significant amounts of time when building complex web applications.
+
+Overall, Django is a powerful and flexible web development framework that provides developers with the tools they need to build high-quality web applications quickly and easily. Its focus on clean code and best practices makes it a popular choice for both beginners and experienced developers alike.
+            </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </br>      
+    
+{% endblock content %}

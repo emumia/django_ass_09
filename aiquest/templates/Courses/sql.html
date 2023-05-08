@@ -1,0 +1,39 @@
+{% extends 'common_code/base.html' %}
+{% load static%}
+
+{% block title %} Sql {% endblock title %}
+{% load static%}
+
+
+{% block content %}
+</br></br>
+
+    
+    <div class="card mb-3" style="max-width: 1740px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'images/SQL-for-Data-Science.jpg'%}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">SQL</h5>
+              <p class="card-text">
+                SQL (Structured Query Language) is a powerful tool for working with relational databases. It is a standard programming language used for managing and manipulating data stored in databases. SQL allows users to create, modify, and retrieve data from databases, making it an essential tool for businesses, developers, and data analysts.
+
+Some of the common operations performed using SQL include creating tables, inserting data into tables, updating and deleting records, and querying the data to extract useful information. SQL can be used with various types of databases, including MySQL, Oracle, SQL Server, PostgreSQL, and SQLite, among others.
+
+One of the most powerful features of SQL is its ability to filter and sort data based on specific criteria. This makes it easy to find specific data and analyze it in different ways. For example, you can use SQL to retrieve all the records in a database that meet certain criteria, such as those that fall within a specific date range or have a certain value in a particular field.
+
+Another key feature of SQL is its ability to join tables together. This allows users to combine data from multiple tables into a single view, making it easier to analyze and work with the data. SQL also supports advanced functions, such as grouping and aggregation, which can be used to summarize data and calculate various statistics.
+
+Overall, SQL is a versatile and powerful tool for working with databases. Whether you're a business owner, developer, or data analyst, knowing how to use SQL can help you extract valuable insights from your data and make better-informed decisions.
+            </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </br>      
+    
+{% endblock content %}

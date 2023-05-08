@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>{% block title %} {% endblock title %}</title>
+<link rel="icon" href="{%static 'images/favicon.png'%}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+<!-- navbar start-->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'home' %}">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'career'%}">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'res'%}">Resources</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{% url 'courses'%}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'django_web_development'%}">Django Web development</a></li>
+              <li><a class="dropdown-item" href="{% url 'machine Learning'%}">Machine Learning</a></li>
+              <li><a class="dropdown-item" href="{% url 'deep Learning'%}">Deep Learning</a></li>
+              <li><a class="dropdown-item" href="{% url 'data_analysis'%}">Data Analysis</a></li>
+              <li><a class="dropdown-item" href="{% url 'stat'%}">Statistics</a></li>
+              <li><a class="dropdown-item" href="{% url 'cdc'%}">Cloud Computing</a></li>
+              <li><a class="dropdown-item" href="{% url 'big_data'%}">Big Data Engineering</a></li>
+              <!--<li><hr class="dropdown-divider"></li>-->
+              <li><a class="dropdown-item" href="{% url 'python'%}">Python</a></li>
+              <li><a class="dropdown-item" href="{% url 'sql'%}">SQL</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact'%}">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!-- navbar end-->
+
+{% block content %}
+
+{% endblock content %}
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid my-5 %">
+
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: #1c2331"
+            >
+      <!-- Section: Social media -->
+      <section
+               class="d-flex justify-content-between p-4"
+               style="background-color: #6351ce"
+               >
+        <!-- Left -->
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+  
+        <!-- Right -->
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <!--<h6 class="text-uppercase fw-bold">Aiquest</h6>-->
+              <img src="{% static 'images/aiquest_in_dark_bg_1.png'%}" class="img-fluid rounded-start" alt="...">
+              <!--<hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />-->
+              </br></br>    
+              <p>
+                Build your career in data science! aiQuest believe in delivering a quality curriculum with a highly qualified professional team working as Data Engineer, Data Scientist, and Data Analyst.
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Courses</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                <a href="{% url 'machine Learning'%}" class="text-white">Machine Learning</a>
+              </p>
+              
+              <p>
+                <a href="{% url 'deep Learning'%}" class="text-white">Deep Learning</a>
+              </p>
+              
+              <p>
+                <a href="{% url 'data_analysis'%}" class="text-white">Data Analysis</a>
+              </p>
+              <p>
+                <a href="{% url 'django_web_development'%}" class="text-white">Django</a>
+              </p>
+              <p>
+                <a href="{% url 'stat'%}" class="text-white">Statistics</a>
+              </p>
+              <p>
+                <a href="{% url 'cdc'%}" class="text-white">Cloud Computing</a>
+              </p>
+              <p>
+                <a href="{% url 'python'%}" class="text-white">Python</a>
+              </p>
+              <p>
+                <a href="{% url 'sql'%}" class="text-white">SQL</a>
+              </p>
+
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                <a href="https://www.aiquest.org/" class="text-white">Aiquest hub</a>
+              </p>
+              <p>
+                <a href="https://www.aiquest.org/" class="text-white">Become a Freelancer</a>
+              </p>
+              <p>
+                <a href="https://www.facebook.com/groups/StudyMart/?multi_permalinks=1452972438841869&notif_id=1683378267508401&notif_t=group_activity&ref=notif" class="text-white">Facebook</a>
+              </p>
+              <p>
+                <a href="https://www.aiquest.org/" class="text-white">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p><i class="fas fa-home mr-3"></i> 152/2, Panthapath, Dhaka – 1205, Bangladesh</p>
+              <p><i class="fas fa-envelope mr-3"></i> www.aiquest.com</p>
+              <p><i class="fas fa-phone mr-3"></i> +880-170-426-5972</p>
+              <p><i class="fas fa-print mr-3"></i> +880-130-907-8321</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2023 Copyright:
+        <a class="text-green" href="https://github.com/emumia"
+           >MD.MOHAIMINUL ISLAM IMRAN</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  
+  </div>
+  <!-- End of .container -->
+
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+
+
+</body>
+</html>

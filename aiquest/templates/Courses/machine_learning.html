@@ -1,0 +1,35 @@
+{% extends 'common_code/base.html' %}
+
+{% block title %} Machine Learning {% endblock title %}
+{% load static %}
+
+{% block content %}
+</br></br>
+
+    
+    <div class="card mb-3" style="max-width: 1740px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'images/dswith shakil.jpg'%}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Machine Learning</h5>
+              <p class="card-text">
+                Machine learning is a branch of artificial intelligence that enables computers to learn from data and improve their performance on a specific task over time without being explicitly programmed. It involves using algorithms and statistical models to analyze large datasets and make predictions or decisions based on that analysis.
+
+One of the most important applications of machine learning is in predictive modeling, where algorithms are trained on historical data to make predictions about future events. This is used in a wide range of fields, from finance and healthcare to marketing and social media.
+
+There are many different types of machine learning algorithms, including supervised learning, unsupervised learning, and reinforcement learning. In supervised learning, the algorithm is trained on labeled data, where the correct output is known, and it learns to make predictions based on that data. Unsupervised learning, on the other hand, involves training the algorithm on unlabeled data, where the correct output is not known, and it must learn to find patterns and structure in the data on its own. Reinforcement learning involves training the algorithm through a system of rewards and punishments, where it learns to make decisions based on maximizing a reward signal.
+
+As machine learning continues to advance, it has the potential to transform many industries and change the way we live and work. From self-driving cars to personalized medicine, the possibilities are endless. However, it's important to also consider the ethical implications of machine learning, such as potential biases in the data or unintended consequences of automated decision-making.
+            </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </br>      
+    
+{% endblock content %}

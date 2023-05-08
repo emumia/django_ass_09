@@ -1,0 +1,44 @@
+
+{% extends 'common_code/base.html' %}
+{% load static%}
+
+{% block title %}Advanced Python {% endblock title %}
+
+{% block content %}
+</br></br>
+
+    
+    <div class="card mb-3" style="max-width: 1740px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'images/Python-with-Problem-Solving-1.jpg'%}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Advanced Python</h5>
+              <p class="card-text">
+                Advanced Python refers to the more advanced and specialized features of the Python programming language that are designed for building complex applications. These features include topics such as functional programming, metaclasses, decorators, generators, coroutines, async/await, concurrency, and parallelism.
+
+One of the most important aspects of Advanced Python is its ability to facilitate functional programming. This allows developers to write programs that are more concise, easier to read, and maintain. Python has several built-in functions such as map, filter, and reduce that are designed for functional programming. Additionally, the language provides support for lambda functions, which can be used to create small, anonymous functions.
+
+Metaclasses are another advanced feature of Python. They allow you to create new classes on the fly and are used extensively in frameworks and libraries. A metaclass is a class that defines the behavior of other classes, including their inheritance, attributes, and methods.
+
+Decorators are a way to modify the behavior of functions or classes without changing their source code. They are a powerful tool for adding functionality to existing code, such as logging, caching, or error handling. Decorators can be applied to functions, classes, or even methods within classes.
+
+Generators and coroutines are features of Python that allow for efficient and scalable asynchronous programming. Generators are functions that return an iterator, which can be used to produce a sequence of values lazily, rather than generating them all at once. Coroutines are similar to generators, but they allow for more efficient communication between functions and can be used to implement asynchronous programming patterns.
+
+Async/await is a newer feature of Python that allows for more streamlined and readable asynchronous programming. It is a syntax for defining coroutines that are designed to work with the asyncio library, which provides a framework for building asynchronous applications.
+
+Concurrency and parallelism are essential topics in advanced Python programming. They allow for multiple tasks to be executed simultaneously, making it possible to create highly performant applications. Python provides several libraries for concurrent and parallel programming, such as the threading and multiprocessing modules.
+
+In conclusion, Advanced Python provides developers with a wide range of powerful features for building complex and efficient applications. These features include functional programming, metaclasses, decorators, generators, coroutines, async/await, concurrency, and parallelism. By mastering these features, you can write code that is more efficient, scalable, and maintainable.
+            </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </br>      
+    
+{% endblock content %}

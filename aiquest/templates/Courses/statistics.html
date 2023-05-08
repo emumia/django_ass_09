@@ -1,0 +1,43 @@
+
+{% extends 'common_code/base.html' %}
+
+{% block title %} Statistics {% endblock title %}
+{% load static%}
+
+
+{% block content %}
+</br></br>
+
+    
+    <div class="card mb-3" style="max-width: 1740px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'images/Statistics-for-Data-Science-1.jpg'%}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Statistics</h5>
+              <p class="card-text">
+                Statistics is a fundamental tool for data science. It provides the mathematical foundation for analyzing and interpreting data, making it possible to draw meaningful conclusions and make informed decisions. Whether you are working with big data or small, statistical analysis can help you identify trends, patterns, and relationships that might not be immediately apparent.
+
+Some of the key statistical techniques used in data science include:
+
+1. Descriptive statistics: This involves summarizing and describing the main features of a dataset, such as its central tendency, dispersion, and shape. Common measures of central tendency include the mean, median, and mode, while measures of dispersion include variance and standard deviation.
+
+2. Inferential statistics: This involves making inferences about a larger population based on a sample of data. This can include hypothesis testing, confidence intervals, and regression analysis.
+
+3. Machine learning algorithms: Machine learning algorithms use statistical models to automatically learn patterns in data and make predictions or decisions. This includes techniques such as linear regression, logistic regression, decision trees, and neural networks.
+
+In addition to these techniques, data scientists also need to have a strong understanding of probability theory, which forms the basis of many statistical models. They also need to be skilled in data visualization, which involves creating clear and meaningful visual representations of complex data.
+
+Overall, statistics is an essential component of data science, helping to turn raw data into insights and knowledge that can be used to drive decision-making and innovation. By mastering statistical techniques and tools, data scientists can unlock the full potential of their data and help organizations to succeed in today's data-driven world.
+            </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </br>      
+    
+{% endblock content %}
